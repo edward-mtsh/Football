@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayerCollectionViewCell" id="gTV-IL-0wX" customClass="PlayerCollectionViewCell" customModule="Football" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="121"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dr5-sP-UiL">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="121"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ND1-cO-Tub">
+                                <rect key="frame" x="8" y="8" width="326" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.60227529079999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXd-35-x3M">
+                                <rect key="frame" x="8" y="37" width="54.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jersey Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4b-Qw-Gi1">
+                                <rect key="frame" x="8" y="63" width="93" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nationality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2s-ld-Pf2">
+                                <rect key="frame" x="8" y="87" width="65" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uXd-35-x3M" firstAttribute="leading" secondItem="Dr5-sP-UiL" secondAttribute="leading" constant="8" id="10t-0z-ZXb"/>
+                            <constraint firstItem="g2s-ld-Pf2" firstAttribute="top" secondItem="g4b-Qw-Gi1" secondAttribute="bottom" constant="8" id="6oK-My-sS6"/>
+                            <constraint firstItem="g4b-Qw-Gi1" firstAttribute="top" secondItem="uXd-35-x3M" secondAttribute="bottom" constant="8" id="9m3-Av-wPs"/>
+                            <constraint firstItem="uXd-35-x3M" firstAttribute="top" secondItem="ND1-cO-Tub" secondAttribute="bottom" constant="8" id="FT5-73-y8y"/>
+                            <constraint firstItem="g4b-Qw-Gi1" firstAttribute="leading" secondItem="Dr5-sP-UiL" secondAttribute="leading" constant="8" id="Xk2-i4-8Vs"/>
+                            <constraint firstItem="ND1-cO-Tub" firstAttribute="top" secondItem="Dr5-sP-UiL" secondAttribute="top" constant="8" id="icM-Bb-RB9"/>
+                            <constraint firstItem="g2s-ld-Pf2" firstAttribute="leading" secondItem="Dr5-sP-UiL" secondAttribute="leading" constant="8" id="jgR-XN-ztj"/>
+                            <constraint firstItem="ND1-cO-Tub" firstAttribute="leading" secondItem="Dr5-sP-UiL" secondAttribute="leading" constant="8" id="osz-yK-7kr"/>
+                            <constraint firstAttribute="bottom" secondItem="g2s-ld-Pf2" secondAttribute="bottom" constant="18" id="yVx-No-k13"/>
+                            <constraint firstAttribute="trailing" secondItem="ND1-cO-Tub" secondAttribute="trailing" constant="8" id="zZ9-Pf-VhP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Dr5-sP-UiL" secondAttribute="bottom" id="0yU-U5-HSb"/>
+                <constraint firstAttribute="trailing" secondItem="Dr5-sP-UiL" secondAttribute="trailing" id="oNZ-dG-I1b"/>
+                <constraint firstItem="Dr5-sP-UiL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v7i-yK-cjr"/>
+                <constraint firstItem="Dr5-sP-UiL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="w3T-sb-1DI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="342" height="121"/>
+            <connections>
+                <outlet property="jerseyNumberLabel" destination="g4b-Qw-Gi1" id="amH-oH-meT"/>
+                <outlet property="nameLabel" destination="ND1-cO-Tub" id="TUE-20-gQI"/>
+                <outlet property="nationalityLabel" destination="g2s-ld-Pf2" id="kM6-DZ-Lz7"/>
+                <outlet property="positionLabel" destination="uXd-35-x3M" id="Egz-PA-1cA"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="61.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
