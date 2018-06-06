@@ -20,6 +20,6 @@ class Fixture {
         self.date = dictionary?["date"] as? String
         self.homeTeamName = dictionary?["homeTeamName"] as? String
         self.awayTeamName = dictionary?["awayTeamName"] as? String
-        self.result = Result(with: dictionary!["result"] as? [String:AnyObject])
+        self.result = Result(with: dictionary?["result"] as? [String:AnyObject])
     }
 }
